@@ -19,7 +19,8 @@ async function buscaEndereco(cep) {
 
         console.log(consultaCEPConvertida);
         return consultaCEPConvertida;
-    } catch (erro) {
+    }
+    catch (erro) {
         mensagemErro.innerHTML = `<p>O CEP digitado não existe. Por favor, tente novamente.</p>`;
         console.log(erro);
     }
